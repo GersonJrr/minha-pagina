@@ -1,0 +1,103 @@
+body {
+    color: white;
+    background:linear-gradient(Black,blue,rgb(3, 3, 121), rgb(1, 211, 248));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    width: 160px;
+    height: 160px;
+    border-radius:50%;
+    border: 5px solid rgba(0, 0, 0, 0.747);
+    object-fit:cover;
+}
+
+.centro {
+    text-align: center;
+    
+}
+
+h1 {
+    color:rgba(3, 241, 210, 0.747);
+    font-family: 'Righteous', cursive;
+
+}
+
+h2 {
+    color: white;
+    font-family: 'Righteous', cursive;
+
+}
+
+main {
+    font-family: "righteous" , cursive;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'Righteous', cursive;
+}
+
+footer a {
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    padding: 0px 50px;
+}
+
+.btn-3{
+    overflow:hidden;
+    color: white;
+    border-radius: 150px;
+    box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    border: none;
+    padding: 10px;
+}
+
+.btn-3::after {
+    content: "";
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top: -50px;
+    left: -100px;
+    background-color: #ff3cac;
+    background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+.btn-3:hover {
+
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5), -10px -10px 25px 0 rgba(39, 200, 255, 0.5);
+
+}
+
+.btn-3:hover::after {
+    transform: rotate(150deg)
+}
